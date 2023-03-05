@@ -10,7 +10,7 @@ body {
   display: block;
   font-size:20px;
   font-weight: 200;
-  background-color: blue;
+  background-color: #e5ff00;
 }
 .m-5-auto {
   margin: 5rem auto
@@ -20,7 +20,7 @@ body {
   margin-right: 1rem;
   padding: .6rem;
   width: 10rem;
-  background: #222;
+  background: hsl(0, 1%, 62%);
   border: none;
   color: #fff;
   font-size: 1.2rem;

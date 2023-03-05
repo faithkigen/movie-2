@@ -1,4 +1,5 @@
 import React from "react";
+import {link} from 'react-router-dom'
 const Card=(movie)=>{
     let img_path="https://image.tmdb.org/t/p/w500";
     return(
