@@ -42,7 +42,7 @@ const Homepage=()=>{
     <div className="App">
       <h1>Setflix</h1>
       {/* Css style */}
-    <div style={{display:"flex"}}>
+      <div style={{display:"flex", autoresize: "max-width: 100%", height: "auto", border: "0.5px, solid"}}>
       {movieArray}
       </div>
      <h1></h1>
