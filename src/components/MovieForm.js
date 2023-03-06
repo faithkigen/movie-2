@@ -1,22 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-
 const MovieForm = () => {
   const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
-
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
   };
-
   const handleYearChange = (e) => {
     setYear(e.target.value);
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`https://api.themoviedb.org/3${title}&y=${year}`);
+      const response = await fetch(`https://www.omdbapi.com/?apikey=YOUR_API_KEY&type=movie&t=${title}&y=${year}`);
       if (response.ok) {
         const data = await response.json();
         console.log(data);
@@ -32,7 +27,6 @@ const MovieForm = () => {
       // ...
     }
   };
-
   return (
     <form onSubmit={handleSubmit}>
       <label>
@@ -43,10 +37,8 @@ const MovieForm = () => {
         Year:
         <input type="number" value={year} onChange={handleYearChange} />
       </label>
-      <button type="submit">Search</button>
-      <Link to="/">Back to Home</Link>
+      <button type="submit">Add Movie</button>
     </form>
   );
 };
-
 export default MovieForm;

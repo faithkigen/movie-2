@@ -1,66 +1,46 @@
-import React, { useState, useEffect } from 'react';
-import {link} from 'react-router-dom'
-function MovieCard({ movie, onWatchLater }) {
-  const [isWatched, setIsWatched] = useState(false);
-  // Check if the movie is already in the "watch later" list
-  useEffect(() => {
-    const watchLaterList = JSON.parse(localStorage.getItem('watchLaterList') || '[]');
-    setIsWatched(watchLaterList.includes(movie.id));
-  }, [movie.id]);
-  function handleWatchLaterClick() {
-    onWatchLater(movie);
-    setIsWatched(true);
+import React, { useState } from 'react'
+import { useParams } from 'react-router-dom'
+
+function UpdateMovie() {
+  const [title, setTitle] = useState('')
+  const [year, setYear] = useState('')
+  const [genre, setGenre] = useState('')
+  const [director, setDirector] = useState('')
+  const [plot, setPlot] = useState('')
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // Add code to update movie details in database
   }
+
   return (
     <div>
-      <h2>{movie.title}</h2>
-      <p>{movie.description}</p>
-      <button disabled={isWatched} onClick={handleWatchLaterClick}>
-        {isWatched ? 'Added to Watch Later' : 'Watch Later'}
-      </button>
+      <h2>Update Movie</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="title">Title:</label>
+          <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)} />
+        </div>
+        <div>
+          <label htmlFor="year">Year:</label>
+          <input type="text" id="year" value={year} onChange={(e) => setYear(e.target.value)} />
+        </div>
+        <div>
+          <label htmlFor="genre">Genre:</label>
+          <input type="text" id="genre" value={genre} onChange={(e) => setGenre(e.target.value)} />
+        </div>
+        <div>
+          <label htmlFor="director">Director:</label>
+          <input type="text" id="director" value={director} onChange={(e) => setDirector(e.target.value)} />
+        </div>
+        <div>
+          <label htmlFor="plot">Plot:</label>
+          <textarea id="plot" value={plot} onChange={(e) => setPlot(e.target.value)}></textarea>
+        </div>
+        <button type="submit">Update</button>
+      </form>
     </div>
-  );
+  )
 }
-function WatchLaterList() {
-  const [watchLaterList, setWatchLaterList] = useState([]);
-  useEffect(() => {
-    const storedList = JSON.parse(localStorage.getItem('watchLaterList') || '[]');
-    setWatchLaterList(storedList);
-  }, []);
-  useEffect(() => {
-    localStorage.setItem('watchLaterList', JSON.stringify(watchLaterList));
-  }, [watchLaterList]);
-  function handleRemoveClick(movieId) {
-    setWatchLaterList(list => list.filter(id => id !== movieId));
-  }
-  return (
-    <div>
-      <h2>Watch Later List</h2>
-      <ul>
-        {watchLaterList.map(id => (
-          <li key={id}>
-            Movie ID: {id}
-            <button onClick={() => handleRemoveClick(id)}>Remove</button>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-function App() {
-  const [watchLaterList, setWatchLaterList] = useState([]);
-  function handleWatchLater(movie) {
-    setWatchLaterList(list => [...list, movie.id]);
-  }
-  return (
-    <div>
-      <h1>Movie Website</h1>
-      <WatchLaterList />
-      <hr />
-      <MovieCard movie={{id: 1, title: "The Matrix", description: "A sci-fi action movie"}} onWatchLater={handleWatchLater} />
-      <MovieCard movie={{id: 2, title: "Inception", description: "A mind-bending thriller"}} onWatchLater={handleWatchLater} />
-      <MovieCard movie={{id: 3, title: "Star Wars", description: "A space opera"}} onWatchLater={handleWatchLater} />
-    </div>
-  );
-}
-export default App;
+
+export default UpdateMovie

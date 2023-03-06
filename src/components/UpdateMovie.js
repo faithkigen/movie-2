@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import {link} from 'react-router-dom'
+
+
 function UpdateMovie() {
   const [title, setTitle] = useState('')
   const [year, setYear] = useState('')
   const [genre, setGenre] = useState('')
   const [director, setDirector] = useState('')
   const [plot, setPlot] = useState('')
+
   const handleSubmit = (e) => {
     e.preventDefault()
     // Add code to update movie details in database
@@ -41,4 +43,5 @@ function UpdateMovie() {
     </div>
   )
 }
+
 export default UpdateMovie
