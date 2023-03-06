@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Card from "./Card";
 import Header from "./Header";
 import { Link } from "react-router-dom"
+import '../App.css'
 
 let API_key="&api_key=db95773a7fb212ba790d71f6adac0e7e";
 let base_url="https://api.themoviedb.org/3";
@@ -75,7 +76,7 @@ const Homepage=()=>{
   },[])
 
   const movieArray=movies.map((movie)=>{
-    return <div>
+    return <div className="Setflix">
          <img src={movie.image_url}/>
          <h2>{movie.title}</h2>
          <p>{movie.genre}</p>

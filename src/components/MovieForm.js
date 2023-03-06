@@ -28,17 +28,19 @@ const MovieForm = () => {
     }
   };
   return (
+    <div className="movie">
     <form onSubmit={handleSubmit}>
       <label>
         Title:
         <input type="text" value={title} onChange={handleTitleChange} />
       </label>
-      <label>
+      <label className="MovieFinder">
         Year:
         <input type="number" value={year} onChange={handleYearChange} />
       </label>
       <button type="submit">Add Movie</button>
     </form>
+    </div>
   );
 };
 export default MovieForm;
