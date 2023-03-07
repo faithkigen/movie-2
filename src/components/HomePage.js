@@ -5,26 +5,26 @@ import Header from "./Header";
 import { Link } from "react-router-dom"
 import '../App.css'
 
-let API_key="&api_key=db95773a7fb212ba790d71f6adac0e7e";
-let base_url="https://api.themoviedb.org/3";
-let url=base_url+"/discover/movie?sort_by=popularity.desc"+API_key;
-let arr=["Popular","Theatre","Kids","Drama","Comedie"];
+// let API_key="&api_key=db95773a7fb212ba790d71f6adac0e7e";
+// let base_url="https://api.themoviedb.org/3";
+// let url=base_url+"/discover/movie?sort_by=popularity.desc"+API_key;
+// let arr=["Popular","Theatre","Kids","Drama","Comedie"];
 
- function SearchMovie() {
-  const [query, setQuery] = useState('');
-  const [movies, setMovies] = useState([]);
-  const SearchMovies = async (e) => {
-    e.preventDefault();
-    console.log('submitting');
-    const url = `https:9292/movies`;
-    try {
-      const res = await fetch(url);
-      const data = await res.json();
-      setMovies(data.results);
-    } catch (err) {
-      console.log(err);
-    }
-  };
+//  function SearchMovie() {
+//   const [query, setQuery] = useState('');
+//   const [movies, setMovies] = useState([]);
+//   const SearchMovies = async (e) => {
+//     e.preventDefault();
+//     console.log('submitting');
+//     const url = `https:9292/movies`;
+//     try {
+//       const res = await fetch(url);
+//       const data = await res.json();
+//       setMovies(data.results);
+//     } catch (err) {
+//       console.log(err);
+//     }
+//   };
   return (
     <>
     
@@ -54,7 +54,7 @@ let arr=["Popular","Theatre","Kids","Drama","Comedie"];
       </div>
     </>
   );
-}
+// }
 const Homepage=()=>{
     const [movieData,setData]=useState([]);
     const [url_set,setUrl]=useState(url);
@@ -98,7 +98,7 @@ const Homepage=()=>{
 
   return (
     <div className="App">
-      <h1>SEtflix</h1>
+      <h1 className="Header">SETFLIX</h1>
       <Header />
       <Link to="/add" className="btn btn-main">
                 + Add
@@ -112,32 +112,9 @@ const Homepage=()=>{
  
   );
   
-  const getData=(movieType)=>{
-    if(movieType==="Popular") {
-      url=base_url+"/discover/movie?sort_by=popularity.desc"+API_key;
-    }
-    if(movieType==="Theatre") {
-      url=base_url+"/discover/movie?sort_by=popularity.desc"+API_key;
-    }
-    if(movieType==="Drama") {
-      url=base_url+"/discover/movie?with_genres=18&primary_release_year=2014"+API_key;
-    }
-    if(movieType==="Comedie") {
-      url=base_url+"/discover/movie?with_genres=35&with_cast=23659&sort_by=revenue.desc"+API_key;
-    }
-    setUrl(url);
-  }
   
-  const searchMovie=(evt)=>{
-    if(evt.key==="Enter") {
-      url=base_url+"/search/movie?api_key=db95773a7fb212ba790d71f6adac0e7e&query="+search;
-      setUrl(url);
-      setSearch(" ");
-    }
-  }
-    
-  return(
-    <>
+    return(
+    <div>
       <div className="header">   
         <nav>
           <ul>
