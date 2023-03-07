@@ -26,7 +26,7 @@ let arr=["Popular","Theatre","Kids","Drama","Comedie"];
   };
   return (
     <>
-   
+   <div className="movie">
       <form className="form" onSubmit={SearchMovies}>
         <label className="label" htmlFor="query">
           Movie Title:
@@ -41,9 +41,10 @@ let arr=["Popular","Theatre","Kids","Drama","Comedie"];
         />
         <button className="button">Search</button>
         <Link to="/search" className="btn btn-main">
-                + search
+                search
               </Link>
       </form>
+      </div >
       <div className="card-list">
         {/* { {movies
           .filter((movie) => movie.poster_path)

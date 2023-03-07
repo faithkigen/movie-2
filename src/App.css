@@ -793,7 +793,7 @@ nav > button > a:hover {
   font-size: large;
   padding: auto;
   text-decoration: dotted;
-  text-align: right;
+  text-align: center;
 }
 .text-center login-body m-5 auto{
   color: #949d99;
@@ -803,15 +803,6 @@ nav > button > a:hover {
 
 .button{
   color: #530606;
-
-}
-
-.Header{
-  color: chartreuse;
-  font-weight: bolder;
-  font-size:larger ;
-  text-align: center;
-  font-style: oblique;
 }
 .header{
   color: #1aa762;
@@ -820,4 +811,16 @@ nav > button > a:hover {
   font-style: italic;
   text-align: center;
 }
+
+.movie{
+  color:hwb(252 41% 11%);
+  font-weight: 100%;
+  font-size: larger;
+  font-style: italic;
+  padding: auto;
+  text-align: center;
+  
+}
+
+
 

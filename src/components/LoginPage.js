@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 //import '../App.css'
 export default function SignInPage() {
     return (
+        <div className="login">
         <div className="text-center login-body m-5 auto">
         <div className="login-form">
             <h2 className="title-sign">Sign in </h2>
@@ -21,6 +22,7 @@ export default function SignInPage() {
                     <button id="sub_btn" type="submit">Login</button>
                 </p>
             </form>
+            </div>
             <footer >
                 <p className="paragraph">First time? <Link to="/register">Create an account</Link>.</p>
                 <p><Link to="/">Back to Homepage</Link>.</p>
