@@ -3,10 +3,10 @@ import MovieForm from './MovieForm'
 
 
 const Header = () => {
-  return (
-    <div>
+ return (
+   <div>
         <>
-       
+     
         <MovieForm />
         </>
         </div>

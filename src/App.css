@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box;
 }
 :root {
     --primary: red;
@@ -22,15 +22,15 @@ body {
     font-display:inherit;
 
     } */
-    h1{
+    /* h1{
     color: whitesmoke;
     align-self: center;
     margin-left: 28rem;
     font-weight: 100%;
     font-style: italic;
 
-    }
-    .search {
+    } */
+    /* .search {
     margin: 3rem;
     margin-left: 12rem;
     background-color: transparent;
@@ -60,9 +60,9 @@ body {
         font-size: 1rem;
         transition: all 0.3s ease;
         line-height: 1.1;
-      }
+      } */
 
-.btn:hover {
+/* .btn:hover {
     background-color: #1aa762;
     opacity: 1;
     cursor: pointer;
@@ -127,8 +127,8 @@ body {
     color: orange;
     }
     .movie-info span.red {
-    color: rgb(189, 42, 42);
-    }
+    color: rgb(189, 42, 42);*/
+    /* } 
     .overview {
     background-color: #fff;
     padding: 2rem;
@@ -145,9 +145,9 @@ body {
     margin-top: 0;
     }
     .movie:hover .overview {
-    transform: translateY(0);
+    transform: translateY(0);*/
     }
-    @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+    /* @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"); 
 
 :root {
   --primary: grey;
@@ -246,7 +246,7 @@ header a:hover {
 
 header .brand a {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.5rem; 
 }
 
 header .nav-links {
@@ -481,103 +481,15 @@ nav > button {
   padding: 6px 12px;
   border: 1px solid #1d3e68;
   border-radius: 10px;
-}
-nav > button:hover {
-  background-color: transparent;
-}
-nav > button > a {
-  text-decoration: none;
-  color: white;
-  width: 100%;
-  height: 100%;
-  /* border: 1px solid red; */
-}
-nav > button > a:hover {
-  color: #1d3e68;
-}
-.loginFormContainer {
-  display: flex;
-  flex-direction: column;
-  height: 70vh;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-.loginForm {
-  padding: 4rem 3rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: white;
-  width: 30%;
-  min-width: 300px;
-  display: flex;
-  flex-direction: column;
-}
-.loginForm > h1 {
-  text-align: center;
-  padding-bottom: 1rem;
-  color: #1d3e68;
-}
-.loginForm > label {
-  padding-top: 1rem;
-}
-.loginForm > label > span {
-  color: red;
-}
-.loginForm > input {
-  padding: 4px 6px;
-  border-radius: 6px;
-  border: 1px solid black;
-}
-.loginForm > button {
-  background-color: #1d3e68;
-  color: white;
-  padding: 6px 8px;
-  border-radius: 6px;
-  border: 1px solid #1d3e68;
-}
-.loginForm > button:hover {
-  background-color: darkgrey;
-  background-color: transparent;
-  cursor: pointer;
-  color: #1d3e68;
-}
-.loginForm > p,
-.loginForm > p > a {
-  text-align: center;
-  text-decoration: none;
-}
-.loginForm > p > a {
-  color: #1d3e68;
-}
 
-.Setflix{
-  background-color: #22254b;
-  display: flex column;
-  
-}@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
-
-* {
-    box-sizing: border-box;
-}
-:root {
-    --primary: red;
-    --secondary: black;
-    --white: white;
-
-}
+}  
 
 body {
     background-color: #530606;
     font-family: "Poppins", sans-serif;
     margin: 0;
     }
-    /* header {
-    background-color: #363636;
-    display: flex;
-    font-weight: bolder;
-    font-display:inherit;
-
-    } */
+    
     h1{
     color: whitesmoke;
     align-self: center;
@@ -586,241 +498,6 @@ body {
     font-style: italic;
 
     }
-    .search {
-    margin: 3rem;
-    margin-left: 12rem;
-    background-color: transparent;
-    border: 2px solid #e9e9ec;
-    border-radius: 50px;
-    color: #fff;
-    font-family: inherit;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    }
-    .search::placeholder {
-    color: #7378c5;
-    }
-    .search:focus {
-    background-color: red;
-    outline: none;
-    }
-    .btn {
-        padding: 10px 15px;
-        background-color: var(--secondary);
-        color: var(--primary);
-        border-radius: 5px;
-        text-transform: uppercase;
-        font-weight: 700;
-        display: inline-block;
-        border: none;
-        font-size: 1rem;
-        transition: all 0.3s ease;
-        line-height: 1.1;
-      }
-
-.btn:hover {
-    background-color: #1aa762;
-    opacity: 1;
-    cursor: pointer;
-  }
-  
-  .btn:disabled {
-    pointer-events: none;
-    opacity: 0.5;
-  }
-  
-    div{
-    display: flex;
-    flex-wrap: wrap;
-    display: inline-block;
-    flex-wrap: wrap;
-    padding: 33.33px;
-    margin:-10px 0 0 -10px;
-    position: relative;
-    }
-    .movie {
-    background-color: #373b69;
-    border-radius: 3px;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    position: relative;
-    margin: 1rem;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    font-weight: bold;
-    }
-    .movie img {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-    margin:-10px 0 0 -10px;
-    position: relative;
-    }
-    .movie-info {
-    color: #eee;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 1rem 1rem;
-    letter-spacing: 0.5px;
-    }
-    .movie-info h3 {
-    margin: 0;
-    }
-    .movie-info span {
-    background-color: #22254b;
-    border-radius: 3px;
-    font-weight: bold;
-    padding: 0.25rem 0.8rem;
-    }
-    .movie-info span.green {
-    color: rgb(39, 189, 39);
-    }
-    .movie-info span.orange {
-    color: orange;
-    }
-    .movie-info span.red {
-    color: rgb(189, 42, 42);
-    }
-    .overview {
-    background-color: #fff;
-    padding: 2rem;
-    position: absolute;
-    max-height: 100%;
-    overflow: auto;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transform: translateY(101%);
-    transition: transform 0.3s ease-in;
-    }
-    .overview h3 {
-    margin-top: 0;
-    }
-    .movie:hover .overview {
-    transform: translateY(0);
-    }
-    @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
-
-:root {
-  --primary: grey;
-  --secondary: black;
-  --white: #fff;
-}
-
-body {
-  font-family: "Source Sans Pro", sans-serif;
-  padding: 0;
-  margin: 0;
-}
-
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-.btn {
-  padding: 10px 15px;
-  background-color: var(--secondary);
-  color: var(--primary);
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: 700;
-  display: inline-block;
-  border: none;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  line-height: 1.1;
-}
-
-.btn:hover {
-  background-color: black;
-  opacity: 1;
-  cursor: pointer;
-}
-
-.btn:disabled {
-  pointer-events: none;
-  opacity: 0.5;
-}
-
-input:focus {
-  outline: none;
-}
-
-/* Header Styles */
-header {
-  background-color: var(--primary);
-}
-
-header .inner-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
-header a {
-  color: var(--white);
-  font-size: 1.25rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-header a:hover {
-  opacity: 0.7;
-}
-
-header .brand a {
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-header .nav-links {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-header .nav-links li {
-  display: inline-block;
-  margin-right: 30px;
-}
-
-header .nav-links li:last-child {
-  margin-right: 0;
-}
 
 /* Add Page */
 .add-content {
@@ -994,7 +671,7 @@ Movie Page
   font-size: 3rem;
   text-align: center;
 } */
-
+ */
 
 body{
   background-color: blueviolet;
@@ -1091,7 +768,7 @@ nav > button > a:hover {
   margin-bottom: 20px;
   padding-top: 20%;
   padding-bottom: 20;
-} width: 100%;
+} 
 
 
 .movie{
@@ -1135,5 +812,12 @@ nav > button > a:hover {
   font-size:larger ;
   text-align: center;
   font-style: oblique;
+}
+.header{
+  color: #1aa762;
+  font-weight: bolder;
+  font-size: larger;
+  font-style: italic;
+  text-align: center;
 }
 
